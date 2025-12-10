@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Byungyoon Kim | BizOps & Technical PM</title>
-    <meta name="description"
-        content="Portfolio of Byungyoon Kim - BizOps Specialist & Technical PM bridging business strategy with technical execution.">
-
+    <meta name="description" content="Portfolio of Byungyoon Kim - BizOps Specialist & Technical PM bridging business strategy with technical execution.">
+    
     <!-- Open Graph / Facebook / LinkedIn Preview -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://your-id.github.io/">
     <meta property="og:title" content="Byungyoon Kim | BizOps & Technical PM">
-    <meta property="og:description"
-        content="Optimizing Business Strategy through Product Execution. Explore case studies on Automation, AI Agents, and Product Growth.">
-    <meta property="og:image"
-        content="https://ui-avatars.com/api/?name=Byungyoon+Kim&background=2563EB&color=fff&size=512">
+    <meta property="og:description" content="Optimizing Business Strategy through Product Execution. Explore case studies on Automation, AI Agents, and Product Growth.">
+    <meta property="og:image" content="https://ui-avatars.com/api/?name=Byungyoon+Kim&background=2563EB&color=fff&size=512">
 
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,9 +20,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <!-- Noto Sans KR for Korean text -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
@@ -54,23 +49,11 @@
         }
     </script>
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .modal {
-            transition: opacity 0.25s ease;
-        }
-
-        body.modal-active {
-            overflow: hidden;
-        }
-
-        .lang-active {
-            font-weight: 800;
-            color: #2563EB;
-        }
-
+        html { scroll-behavior: smooth; }
+        .modal { transition: opacity 0.25s ease; }
+        body.modal-active { overflow: hidden; }
+        .lang-active { font-weight: 800; color: #2563EB; }
+        
         /* Process Flow Animation Styles */
         .flow-container {
             position: relative;
@@ -81,7 +64,7 @@
             align-items: center;
             justify-content: center;
         }
-
+        
         .flow-line {
             position: absolute;
             height: 2px;
@@ -89,33 +72,14 @@
             width: 100%;
             animation: flow-line 3s infinite linear;
         }
-
-        .flow-line:nth-child(1) {
-            top: 30%;
-            animation-delay: 0s;
-            opacity: 0.3;
-        }
-
-        .flow-line:nth-child(2) {
-            top: 50%;
-            animation-delay: 1.5s;
-            opacity: 0.5;
-        }
-
-        .flow-line:nth-child(3) {
-            top: 70%;
-            animation-delay: 0.8s;
-            opacity: 0.3;
-        }
+        
+        .flow-line:nth-child(1) { top: 30%; animation-delay: 0s; opacity: 0.3; }
+        .flow-line:nth-child(2) { top: 50%; animation-delay: 1.5s; opacity: 0.5; }
+        .flow-line:nth-child(3) { top: 70%; animation-delay: 0.8s; opacity: 0.3; }
 
         @keyframes flow-line {
-            0% {
-                transform: translateX(-100%);
-            }
-
-            100% {
-                transform: translateX(100%);
-            }
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
         }
 
         .gear-icon {
@@ -127,7 +91,6 @@
         }
     </style>
 </head>
-
 <body class="bg-light text-slate-800 font-sans antialiased">
 
     <!-- Navigation -->
@@ -135,29 +98,21 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0">
-                    <span class="font-bold text-xl text-dark tracking-tight">Byungyoon<span
-                            class="text-primary">.Kim</span></span>
+                    <span class="font-bold text-xl text-dark tracking-tight">Byungyoon<span class="text-primary">.Kim</span></span>
                 </div>
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#about" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition"
-                        data-i18n="nav_competencies">Competencies</a>
-                    <a href="#projects" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition"
-                        data-i18n="nav_cases">Case Studies</a>
-                    <a href="#experience" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition"
-                        data-i18n="nav_career">Career</a>
-
+                    <a href="#about" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition" data-i18n="nav_competencies">Competencies</a>
+                    <a href="#projects" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition" data-i18n="nav_cases">Case Studies</a>
+                    <a href="#experience" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition" data-i18n="nav_career">Career</a>
+                    
                     <!-- Language Switcher -->
                     <div class="flex items-center bg-slate-100 rounded-full px-1 py-1">
-                        <button onclick="setLanguage('en')" id="btn-en"
-                            class="px-3 py-1 rounded-full text-xs font-medium transition lang-active">EN</button>
-                        <button onclick="setLanguage('ko')" id="btn-ko"
-                            class="px-3 py-1 rounded-full text-xs font-medium text-slate-500 hover:text-dark transition">KR</button>
+                        <button onclick="setLanguage('en')" id="btn-en" class="px-3 py-1 rounded-full text-xs font-medium transition lang-active">EN</button>
+                        <button onclick="setLanguage('ko')" id="btn-ko" class="px-3 py-1 rounded-full text-xs font-medium text-slate-500 hover:text-dark transition">KR</button>
                     </div>
 
-                    <a href="#contact"
-                        class="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition"
-                        data-i18n="nav_contact">Contact Me</a>
+                    <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition" data-i18n="nav_contact">Contact Me</a>
                 </div>
             </div>
         </div>
@@ -167,44 +122,35 @@
     <section class="pt-32 pb-20 bg-dark text-white relative overflow-hidden">
         <!-- Background Decor -->
         <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-blue-600 opacity-20 blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 rounded-full bg-purple-600 opacity-20 blur-3xl">
-        </div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 rounded-full bg-purple-600 opacity-20 blur-3xl"></div>
 
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left">
             <div class="md:flex md:items-center md:justify-between">
                 <div class="md:w-3/5">
-                    <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-blue-300 uppercase bg-blue-900/50 rounded-full"
-                        data-i18n="hero_tag">
+                    <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-blue-300 uppercase bg-blue-900/50 rounded-full" data-i18n="hero_tag">
                         BizOps Specialist & Technical PM
                     </div>
                     <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
                         <span data-i18n="hero_title_1">Optimizing Business Strategy</span><br>
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400"
-                            data-i18n="hero_title_2">through Product Execution.</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400" data-i18n="hero_title_2">through Product Execution.</span>
                     </h1>
                     <p class="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl" data-i18n="hero_desc">
                         I bridge the gap between business goals and technical reality.
-                        I identify operational bottlenecks, design scalable product solutions, and directly engineer the
-                        tools to solve them.
+                        I identify operational bottlenecks, design scalable product solutions, and directly engineer the tools to solve them.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <a href="#projects"
-                            class="px-8 py-3 bg-primary text-white font-bold rounded-lg hover:bg-blue-600 transition shadow-lg shadow-blue-500/30"
-                            data-i18n="hero_cta_project">
+                        <a href="#projects" class="px-8 py-3 bg-primary text-white font-bold rounded-lg hover:bg-blue-600 transition shadow-lg shadow-blue-500/30" data-i18n="hero_cta_project">
                             View Case Studies
                         </a>
-                        <a href="./Byungyoon Kim Resume.pdf" target="_blank"
-                            class="px-8 py-3 bg-slate-700 text-white font-semibold rounded-lg hover:bg-slate-600 transition flex items-center justify-center gap-2"
-                            data-i18n="hero_cta_resume">
+                        <a href="./Byungyoon Kim Resume.pdf" target="_blank" class="px-8 py-3 bg-slate-700 text-white font-semibold rounded-lg hover:bg-slate-600 transition flex items-center justify-center gap-2" data-i18n="hero_cta_resume">
                             <i class="fa-solid fa-file-pdf"></i> Download Resume
                         </a>
                     </div>
                 </div>
-
+                
                 <!-- Hero Visual (Process Flow Concept) -->
                 <div class="md:w-2/5 mt-12 md:mt-0 flex justify-center">
-                    <div
-                        class="relative bg-slate-800 p-1 rounded-xl shadow-2xl border border-slate-700 w-full max-w-md overflow-hidden">
+                    <div class="relative bg-slate-800 p-1 rounded-xl shadow-2xl border border-slate-700 w-full max-w-md overflow-hidden">
                         <!-- Header Bar -->
                         <div class="bg-slate-900 px-4 py-2 flex items-center gap-2 border-b border-slate-700">
                             <div class="w-3 h-3 rounded-full bg-red-500"></div>
@@ -212,15 +158,13 @@
                             <div class="w-3 h-3 rounded-full bg-green-500"></div>
                             <span class="text-xs text-slate-400 ml-2 font-mono">workflow_optimizer.py</span>
                         </div>
-
+                        
                         <!-- Content Area -->
-                        <div
-                            class="p-6 relative bg-gradient-to-br from-slate-800 to-slate-900 h-64 flex flex-col justify-between">
-
+                        <div class="p-6 relative bg-gradient-to-br from-slate-800 to-slate-900 h-64 flex flex-col justify-between">
+                            
                             <!-- Before State -->
                             <div class="flex justify-between items-center mb-2 opacity-50">
-                                <div
-                                    class="bg-red-900/30 border border-red-800/50 rounded px-3 py-1 text-xs text-red-300 flex items-center gap-2">
+                                <div class="bg-red-900/30 border border-red-800/50 rounded px-3 py-1 text-xs text-red-300 flex items-center gap-2">
                                     <i class="fa-solid fa-triangle-exclamation"></i>
                                     <span>Legacy Process</span>
                                 </div>
@@ -248,29 +192,24 @@
 
                                 <!-- Right: Order -->
                                 <div class="absolute right-0 flex flex-col gap-1 items-end">
-                                    <div class="w-12 h-1 bg-green-500/50 rounded shadow-[0_0_10px_rgba(34,197,94,0.5)]">
-                                    </div>
-                                    <div class="w-12 h-1 bg-green-500/50 rounded shadow-[0_0_10px_rgba(34,197,94,0.5)]">
-                                    </div>
-                                    <div class="w-12 h-1 bg-green-500/50 rounded shadow-[0_0_10px_rgba(34,197,94,0.5)]">
-                                    </div>
+                                    <div class="w-12 h-1 bg-green-500/50 rounded shadow-[0_0_10px_rgba(34,197,94,0.5)]"></div>
+                                    <div class="w-12 h-1 bg-green-500/50 rounded shadow-[0_0_10px_rgba(34,197,94,0.5)]"></div>
+                                    <div class="w-12 h-1 bg-green-500/50 rounded shadow-[0_0_10px_rgba(34,197,94,0.5)]"></div>
                                 </div>
                             </div>
 
                             <!-- After State -->
                             <div class="flex justify-between items-center mt-2">
-                                <div
-                                    class="bg-green-900/30 border border-green-800/50 rounded px-3 py-1 text-xs text-green-300 flex items-center gap-2">
+                                <div class="bg-green-900/30 border border-green-800/50 rounded px-3 py-1 text-xs text-green-300 flex items-center gap-2">
                                     <i class="fa-solid fa-check-circle"></i>
                                     <span>Automated Pipeline</span>
                                 </div>
                                 <span class="text-xs text-green-400 font-bold">8h / auto</span>
                             </div>
-
+                            
                             <!-- Efficiency Badge -->
                             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-12">
-                                <span
-                                    class="bg-blue-600 text-white text-[10px] px-2 py-0.5 rounded-full shadow-lg border border-blue-400">
+                                <span class="bg-blue-600 text-white text-[10px] px-2 py-0.5 rounded-full shadow-lg border border-blue-400">
                                     +98% Efficiency
                                 </span>
                             </div>
@@ -287,20 +226,16 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-dark" data-i18n="comp_title">Core Competencies</h2>
-                <p class="mt-4 text-slate-600" data-i18n="comp_subtitle">Combining business acumen with technical
-                    capability.</p>
+                <p class="mt-4 text-slate-600" data-i18n="comp_subtitle">Combining business acumen with technical capability.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Skill 1: Process Engineering -->
                 <div class="p-8 bg-slate-50 rounded-xl border border-slate-100 hover:shadow-lg transition">
-                    <div
-                        class="w-14 h-14 bg-blue-100 text-primary rounded-lg flex items-center justify-center text-2xl mb-6">
+                    <div class="w-14 h-14 bg-blue-100 text-primary rounded-lg flex items-center justify-center text-2xl mb-6">
                         <i class="fa-solid fa-gears"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-dark mb-3" data-i18n="comp_1_title">Process Engineering &
-                        Automation</h3>
-                    <p class="text-slate-600 mb-4" data-i18n="comp_1_desc">Automating manual workflows with code to
-                        build scalable business processes.</p>
+                    <h3 class="text-xl font-bold text-dark mb-3" data-i18n="comp_1_title">Process Engineering & Automation</h3>
+                    <p class="text-slate-600 mb-4" data-i18n="comp_1_desc">Automating manual workflows with code to build scalable business processes.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-2 py-1 bg-white border text-xs rounded text-slate-500">Python/Selenium</span>
                         <span class="px-2 py-1 bg-white border text-xs rounded text-slate-500">Scalability</span>
@@ -309,14 +244,11 @@
                 </div>
                 <!-- Skill 2: Internal Product Mgmt -->
                 <div class="p-8 bg-slate-50 rounded-xl border border-slate-100 hover:shadow-lg transition">
-                    <div
-                        class="w-14 h-14 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center text-2xl mb-6">
+                    <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center text-2xl mb-6">
                         <i class="fa-solid fa-laptop-code"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-dark mb-3" data-i18n="comp_2_title">Internal Product Management
-                    </h3>
-                    <p class="text-slate-600 mb-4" data-i18n="comp_2_desc">Planning and developing AI agents and tools
-                        that solve specific pain points for internal teams.</p>
+                    <h3 class="text-xl font-bold text-dark mb-3" data-i18n="comp_2_title">Internal Product Management</h3>
+                    <p class="text-slate-600 mb-4" data-i18n="comp_2_desc">Planning and developing AI agents and tools that solve specific pain points for internal teams.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-2 py-1 bg-white border text-xs rounded text-slate-500">Product Vision</span>
                         <span class="px-2 py-1 bg-white border text-xs rounded text-slate-500">Gen AI Agents</span>
@@ -325,19 +257,15 @@
                 </div>
                 <!-- Skill 3: Revenue Strategy -->
                 <div class="p-8 bg-slate-50 rounded-xl border border-slate-100 hover:shadow-lg transition">
-                    <div
-                        class="w-14 h-14 bg-green-100 text-green-600 rounded-lg flex items-center justify-center text-2xl mb-6">
+                    <div class="w-14 h-14 bg-green-100 text-green-600 rounded-lg flex items-center justify-center text-2xl mb-6">
                         <i class="fa-solid fa-chart-line"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-dark mb-3" data-i18n="comp_3_title">Revenue Operations & Strategy
-                    </h3>
-                    <p class="text-slate-600 mb-4" data-i18n="comp_3_desc">Driving revenue growth through data-driven
-                        pricing optimization and sales lead generation.</p>
+                    <h3 class="text-xl font-bold text-dark mb-3" data-i18n="comp_3_title">Revenue Operations & Strategy</h3>
+                    <p class="text-slate-600 mb-4" data-i18n="comp_3_desc">Driving revenue growth through data-driven pricing optimization and sales lead generation.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-2 py-1 bg-white border text-xs rounded text-slate-500">Growth Strategy</span>
                         <span class="px-2 py-1 bg-white border text-xs rounded text-slate-500">SQL/Salesforce</span>
-                        <span class="px-2 py-1 bg-white border text-xs rounded text-slate-500">Pricing
-                            Optimization</span>
+                        <span class="px-2 py-1 bg-white border text-xs rounded text-slate-500">Pricing Optimization</span>
                     </div>
                 </div>
             </div>
@@ -350,30 +278,24 @@
             <div class="flex justify-between items-end mb-12">
                 <div>
                     <h2 class="text-3xl font-bold text-dark" data-i18n="proj_main_title">Strategic Initiatives</h2>
-                    <p class="mt-4 text-slate-600" data-i18n="proj_main_subtitle">Case studies of solving business
-                        problems with product thinking.</p>
+                    <p class="mt-4 text-slate-600" data-i18n="proj_main_subtitle">Case studies of solving business problems with product thinking.</p>
                 </div>
             </div>
 
             <!-- Main Grid: 4 Major Projects -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-
-                <!-- Project Card 1: Python Automation (UPDATED) -->
-                <div
-                    class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col h-full border border-slate-100">
+                
+                <!-- Project Card 1: Python Automation (UPDATED with Proof) -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col h-full border border-slate-100">
                     <div class="h-2 bg-blue-500 w-full"></div>
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-4">
-                            <span
-                                class="inline-block px-2 py-1 text-xs font-semibold text-blue-600 bg-blue-50 rounded-full"
-                                data-i18n="p1_tag">Operational Excellence</span>
+                            <span class="inline-block px-2 py-1 text-xs font-semibold text-blue-600 bg-blue-50 rounded-full" data-i18n="p1_tag">Operational Excellence</span>
                             <i class="fa-solid fa-gears text-2xl text-slate-300"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-dark mb-2" data-i18n="p1_title">Territory Planning Data
-                            Pipeline</h3>
+                        <h3 class="text-xl font-bold text-dark mb-2" data-i18n="p1_title">Territory Planning Data Pipeline</h3>
                         <p class="text-slate-600 text-sm mb-6 flex-1" data-i18n="p1_summary">
-                            Automated the data collection of financial/industry info for 1,400+ clients, enabling
-                            data-driven territory assignment.
+                            Automated the data collection of financial/industry info for 1,400+ clients, enabling data-driven territory assignment.
                         </p>
                         <div class="space-y-3 mb-6">
                             <div class="flex items-center text-sm text-slate-700">
@@ -381,33 +303,31 @@
                                 <span data-i18n="p1_stat1">Efficiency: <strong>671h → 8h</strong></span>
                             </div>
                             <div class="flex items-center text-sm text-slate-700">
-                                <i class="fa-solid fa-database text-green-500 w-6"></i>
-                                <span data-i18n="p1_stat2">100% Data Integrity Strategy</span>
+                                <i class="fa-solid fa-trophy text-blue-500 w-6"></i>
+                                <!-- Proof Link Added Here -->
+                                <a href="peerbonus_certificate_automation.pdf" target="_blank" class="hover:text-blue-700 hover:underline cursor-pointer transition flex items-center gap-1 group">
+                                    <span data-i18n="p1_stat2">Awarded Peer Bonus (Efficiency)</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-0 group-hover:opacity-100 transition text-blue-500"></i>
+                                </a>
                             </div>
                         </div>
-                        <button onclick="toggleModal('modal-project-1')"
-                            class="w-full py-2 border border-blue-500 text-blue-600 rounded-lg hover:bg-blue-50 transition font-medium text-sm"
-                            data-i18n="btn_view_case">
+                        <button onclick="toggleModal('modal-project-1')" class="w-full py-2 border border-blue-500 text-blue-600 rounded-lg hover:bg-blue-50 transition font-medium text-sm" data-i18n="btn_view_case">
                             View Case Study
                         </button>
                     </div>
                 </div>
 
-                <!-- Project Card 2: CorpFinder -->
-                <div
-                    class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col h-full border border-slate-100">
+                <!-- Project Card 2: CorpFinder (UPDATED with Proof Link) -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col h-full border border-slate-100">
                     <div class="h-2 bg-purple-500 w-full"></div>
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-4">
-                            <span
-                                class="inline-block px-2 py-1 text-xs font-semibold text-purple-600 bg-purple-50 rounded-full"
-                                data-i18n="p2_tag">Internal Product</span>
+                            <span class="inline-block px-2 py-1 text-xs font-semibold text-purple-600 bg-purple-50 rounded-full" data-i18n="p2_tag">Internal Product</span>
                             <i class="fa-solid fa-wand-magic-sparkles text-2xl text-slate-300"></i>
                         </div>
                         <h3 class="text-xl font-bold text-dark mb-2" data-i18n="p2_title">CorpFinder: AI Agent</h3>
                         <p class="text-slate-600 text-sm mb-6 flex-1" data-i18n="p2_summary">
-                            Launched an internal Gen AI product to resolve Salesforce search limitations, enhancing
-                            partner support experience.
+                            Launched an internal Gen AI product to resolve Salesforce search limitations, enhancing partner support experience.
                         </p>
                         <div class="space-y-3 mb-6">
                             <div class="flex items-center text-sm text-slate-700">
@@ -416,32 +336,30 @@
                             </div>
                             <div class="flex items-center text-sm text-slate-700">
                                 <i class="fa-solid fa-trophy text-yellow-500 w-6"></i>
-                                <span data-i18n="p2_stat2">Awarded Peer Bonus</span>
+                                <!-- Proof Link Added Here -->
+                                <a href="peerbonus_certificate_corpFinder.pdf" target="_blank" class="hover:text-purple-700 hover:underline cursor-pointer transition flex items-center gap-1 group">
+                                    <span data-i18n="p2_stat2">Awarded Peer Bonus (Innovation)</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-0 group-hover:opacity-100 transition text-purple-500"></i>
+                                </a>
                             </div>
                         </div>
-                        <button onclick="toggleModal('modal-project-2')"
-                            class="w-full py-2 border border-purple-500 text-purple-600 rounded-lg hover:bg-purple-50 transition font-medium text-sm"
-                            data-i18n="btn_view_case">
+                        <button onclick="toggleModal('modal-project-2')" class="w-full py-2 border border-purple-500 text-purple-600 rounded-lg hover:bg-purple-50 transition font-medium text-sm" data-i18n="btn_view_case">
                             View Case Study
                         </button>
                     </div>
                 </div>
 
                 <!-- Project Card 3: Signal Bot -->
-                <div
-                    class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col h-full border border-slate-100">
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col h-full border border-slate-100">
                     <div class="h-2 bg-green-500 w-full"></div>
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-4">
-                            <span
-                                class="inline-block px-2 py-1 text-xs font-semibold text-green-600 bg-green-50 rounded-full"
-                                data-i18n="p3_tag">Sales Enablement</span>
+                            <span class="inline-block px-2 py-1 text-xs font-semibold text-green-600 bg-green-50 rounded-full" data-i18n="p3_tag">Sales Enablement</span>
                             <i class="fa-solid fa-money-bill-trend-up text-2xl text-slate-300"></i>
                         </div>
                         <h3 class="text-xl font-bold text-dark mb-2" data-i18n="p3_title">Sales Signal Product</h3>
                         <p class="text-slate-600 text-sm mb-6 flex-1" data-i18n="p3_summary">
-                            Developed a "Sales Trigger" system that filters investment news to deliver high-quality
-                            leads to the sales team.
+                            Developed a "Sales Trigger" system that filters investment news to deliver high-quality leads to the sales team.
                         </p>
                         <div class="space-y-3 mb-6">
                             <div class="flex items-center text-sm text-slate-700">
@@ -453,30 +371,23 @@
                                 <span data-i18n="p3_stat2">Automated Lead Discovery</span>
                             </div>
                         </div>
-                        <button onclick="toggleModal('modal-project-3')"
-                            class="w-full py-2 border border-green-500 text-green-600 rounded-lg hover:bg-green-50 transition font-medium text-sm"
-                            data-i18n="btn_view_case">
+                        <button onclick="toggleModal('modal-project-3')" class="w-full py-2 border border-green-500 text-green-600 rounded-lg hover:bg-green-50 transition font-medium text-sm" data-i18n="btn_view_case">
                             View Case Study
                         </button>
                     </div>
                 </div>
 
                 <!-- Project Card 4: Product Growth -->
-                <div
-                    class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col h-full border border-slate-100">
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col h-full border border-slate-100">
                     <div class="h-2 bg-orange-500 w-full"></div>
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-4">
-                            <span
-                                class="inline-block px-2 py-1 text-xs font-semibold text-orange-600 bg-orange-50 rounded-full"
-                                data-i18n="p4_tag">Product Growth</span>
+                            <span class="inline-block px-2 py-1 text-xs font-semibold text-orange-600 bg-orange-50 rounded-full" data-i18n="p4_tag">Product Growth</span>
                             <i class="fa-solid fa-chart-line text-2xl text-slate-300"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-dark mb-2" data-i18n="p4_title">Product Growth & Monetization
-                        </h3>
+                        <h3 class="text-xl font-bold text-dark mb-2" data-i18n="p4_title">Product Growth & Monetization</h3>
                         <p class="text-slate-600 text-sm mb-6 flex-1" data-i18n="p4_summary">
-                            Optimized onboarding UX and redesigned pricing tiers based on user cohort analysis,
-                            unlocking revenue potential.
+                            Optimized onboarding UX and redesigned pricing tiers based on user cohort analysis, unlocking revenue potential.
                         </p>
                         <div class="space-y-3 mb-6">
                             <div class="flex items-center text-sm text-slate-700">
@@ -488,9 +399,7 @@
                                 <span data-i18n="p4_stat2"><strong>+40%p</strong> Conversion Rate (Edge)</span>
                             </div>
                         </div>
-                        <button onclick="toggleModal('modal-project-4')"
-                            class="w-full py-2 border border-orange-500 text-orange-600 rounded-lg hover:bg-orange-50 transition font-medium text-sm"
-                            data-i18n="btn_view_case">
+                        <button onclick="toggleModal('modal-project-4')" class="w-full py-2 border border-orange-500 text-orange-600 rounded-lg hover:bg-orange-50 transition font-medium text-sm" data-i18n="btn_view_case">
                             View Case Study
                         </button>
                     </div>
@@ -498,58 +407,47 @@
 
                 <!-- NEW SECTION: Other Notable Projects (Updated Description for BizOps) -->
                 <div class="pt-8 border-t border-slate-200">
-                    <h3 class="text-xl font-bold text-dark mb-6" data-i18n="other_proj_title">Additional Technical
-                        Initiatives</h3>
+                    <h3 class="text-xl font-bold text-dark mb-6" data-i18n="other_proj_title">Additional Technical Initiatives</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-
+                        
                         <!-- Mini Project 1: Newsletter (UPDATED with BizOps focus) -->
-                        <div
-                            class="bg-white p-5 rounded-lg border border-slate-200 border-l-4 border-l-blue-500 flex items-start space-x-4 hover:shadow-md transition">
+                        <div class="bg-white p-5 rounded-lg border border-slate-200 border-l-4 border-l-blue-500 flex items-start space-x-4 hover:shadow-md transition">
                             <div class="flex-shrink-0 pt-1">
                                 <i class="fa-solid fa-robot text-blue-500 text-xl"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-dark text-sm" data-i18n="mini_p1_title">AI-Powered Market
-                                    Intelligence Agent</h4>
+                                <h4 class="font-bold text-dark text-sm" data-i18n="mini_p1_title">AI-Powered Market Intelligence Agent</h4>
                                 <div class="flex items-center gap-2 mt-1 mb-2">
-                                    <span
-                                        class="text-xs bg-blue-50 text-blue-600 border border-blue-100 px-2 py-0.5 rounded font-mono">Gemini
-                                        API</span>
-                                    <span
-                                        class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">External
-                                        News Data</span>
+                                    <span class="text-xs bg-blue-50 text-blue-600 border border-blue-100 px-2 py-0.5 rounded font-mono">Gemini API</span>
+                                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">External News Data</span>
                                 </div>
-                                <p class="text-xs text-slate-600 leading-relaxed" data-i18n="mini_p1_desc">
-                                    Automated the collection and summarization of external news using Gemini API.
-                                    Clusters duplicate stories and generates concise summaries, allowing stakeholders to
-                                    make faster decisions without reading every headline.
+                                <p class="text-xs text-slate-600 leading-relaxed mb-3" data-i18n="mini_p1_desc">
+                                    Automated the collection and summarization of external news using Gemini API. Clusters duplicate stories to reduce information overload and accelerate decision-making for stakeholders.
                                 </p>
+                                <!-- Proof Link Added Here -->
+                                <a href="peerbonus_certificate_event.pdf" target="_blank" class="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:text-blue-800 transition">
+                                    <i class="fa-solid fa-trophy"></i>
+                                    <span data-i18n="mini_p1_proof">Awarded Peer Bonus (Proactive Contribution)</span>
+                                </a>
                             </div>
                         </div>
 
                         <!-- Mini Project 2: Resistance Avalon (Design Polish & Link Added) -->
-                        <div
-                            class="bg-white p-5 rounded-lg border border-slate-200 border-l-4 border-l-purple-500 flex items-start space-x-4 hover:shadow-md transition">
+                        <div class="bg-white p-5 rounded-lg border border-slate-200 border-l-4 border-l-purple-500 flex items-start space-x-4 hover:shadow-md transition">
                             <div class="flex-shrink-0 pt-1">
                                 <i class="fa-solid fa-gamepad text-purple-500 text-xl"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-dark text-sm" data-i18n="mini_p2_title">Resistance Avalon
-                                    Platform</h4>
+                                <h4 class="font-bold text-dark text-sm" data-i18n="mini_p2_title">Resistance Avalon Platform</h4>
                                 <div class="flex items-center gap-2 mt-1 mb-2">
-                                    <span
-                                        class="text-xs bg-purple-50 text-purple-600 border border-purple-100 px-2 py-0.5 rounded font-mono">Full
-                                        Stack</span>
-                                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">Side
-                                        Project</span>
+                                    <span class="text-xs bg-purple-50 text-purple-600 border border-purple-100 px-2 py-0.5 rounded font-mono">Full Stack</span>
+                                    <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">Side Project</span>
                                 </div>
                                 <p class="text-xs text-slate-600 leading-relaxed" data-i18n="mini_p2_desc">
-                                    Designed and developed a web-based game platform with 800+ MAU. Automated complex
-                                    game logic to remove administrative friction for users.
+                                    Designed and developed a web-based game platform with 800+ MAU. Automated complex game logic to remove administrative friction for users.
                                 </p>
                                 <!-- UPDATED: Added Link Button -->
-                                <a href="https://resistance-avalon.web.app" target="_blank"
-                                    class="inline-flex items-center gap-1 mt-2 text-xs font-semibold text-purple-600 hover:text-purple-800 transition">
+                                <a href="https://resistance-avalon.web.app" target="_blank" class="inline-flex items-center gap-1 mt-2 text-xs font-semibold text-purple-600 hover:text-purple-800 transition">
                                     <i class="fa-solid fa-external-link-alt"></i> Play Game
                                 </a>
                             </div>
@@ -566,44 +464,39 @@
     <section id="experience" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-dark mb-12 text-center" data-i18n="career_title">Career History</h2>
-
+            
             <div class="relative border-l-2 border-slate-200 ml-4 space-y-12">
                 <!-- Job 1 -->
                 <div class="relative pl-8">
-                    <div class="absolute -left-2.5 top-1.5 w-5 h-5 bg-blue-600 rounded-full border-4 border-white">
-                    </div>
+                    <div class="absolute -left-2.5 top-1.5 w-5 h-5 bg-blue-600 rounded-full border-4 border-white"></div>
                     <h3 class="text-xl font-bold text-dark" data-i18n="job1_title">Program Manager (Sales Ops)</h3>
                     <span class="text-blue-600 font-medium text-sm">Google Cloud</span>
                     <span class="text-slate-400 text-sm ml-2">• 2024.12 - Present</span>
                     <p class="mt-2 text-slate-600 text-sm" data-i18n="job1_desc">
-                        Leading BizOps initiatives to optimize sales workflows.
+                        Leading BizOps initiatives to optimize sales workflows. 
                         Defined product requirements for internal tools (CorpFinder) and managed stakeholder adoption.
                     </p>
                 </div>
 
                 <!-- Job 2 -->
                 <div class="relative pl-8">
-                    <div class="absolute -left-2.5 top-1.5 w-5 h-5 bg-slate-300 rounded-full border-4 border-white">
-                    </div>
+                    <div class="absolute -left-2.5 top-1.5 w-5 h-5 bg-slate-300 rounded-full border-4 border-white"></div>
                     <h3 class="text-xl font-bold text-dark" data-i18n="job2_title">Data Engineer</h3>
                     <span class="text-slate-700 font-medium text-sm">ScaleupSquad</span>
                     <span class="text-slate-400 text-sm ml-2">• 2024.07 - 2024.12</span>
                     <p class="mt-2 text-slate-600 text-sm" data-i18n="job2_desc">
-                        Consulted on data strategy for clients. Built KPI dashboards to visualize business health and
-                        growth metrics.
+                        Consulted on data strategy for clients. Built KPI dashboards to visualize business health and growth metrics.
                     </p>
                 </div>
 
                 <!-- Job 3 -->
                 <div class="relative pl-8">
-                    <div class="absolute -left-2.5 top-1.5 w-5 h-5 bg-orange-400 rounded-full border-4 border-white">
-                    </div>
+                    <div class="absolute -left-2.5 top-1.5 w-5 h-5 bg-orange-400 rounded-full border-4 border-white"></div>
                     <h3 class="text-xl font-bold text-dark" data-i18n="job3_title">Growth Manager</h3>
                     <span class="text-slate-700 font-medium text-sm">Bebridge</span>
                     <span class="text-slate-400 text-sm ml-2">• 2022.05 - 2023.03</span>
                     <p class="mt-2 text-slate-600 text-sm" data-i18n="job3_desc">
-                        Executed product growth experiments. Redesigned pricing strategy and optimized onboarding
-                        funnels (Edge/Chrome), achieving 2x revenue growth.
+                        Executed product growth experiments. Redesigned pricing strategy and optimized onboarding funnels (Edge/Chrome), achieving 2x revenue growth.
                     </p>
                 </div>
             </div>
@@ -613,17 +506,13 @@
     <!-- Footer -->
     <footer id="contact" class="bg-dark text-slate-400 py-12">
         <div class="max-w-6xl mx-auto px-4 text-center">
-            <h2 class="text-2xl font-bold text-white mb-6" data-i18n="footer_title">Open to BizOps & Technical PM Roles.
-            </h2>
+            <h2 class="text-2xl font-bold text-white mb-6" data-i18n="footer_title">Open to BizOps & Technical PM Roles.</h2>
             <div class="flex justify-center space-x-6 mb-8">
                 <!-- Real links from resume -->
-                <a href="https://www.linkedin.com/in/byungyoonkim" target="_blank"
-                    class="text-2xl hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/AndroidNetrunner" target="_blank"
-                    class="text-2xl hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/byungyoonkim" target="_blank" class="text-2xl hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/AndroidNetrunner" target="_blank" class="text-2xl hover:text-white transition"><i class="fa-brands fa-github"></i></a>
                 <!-- UPDATED: Email changed to Gmail -->
-                <a href="mailto:kby9906@gmail.com" class="text-2xl hover:text-white transition"><i
-                        class="fa-solid fa-envelope"></i></a>
+                <a href="mailto:kby9906@gmail.com" class="text-2xl hover:text-white transition"><i class="fa-solid fa-envelope"></i></a>
             </div>
             <p class="text-sm">© 2025 Byungyoon Kim. All rights reserved.</p>
         </div>
@@ -632,72 +521,51 @@
 
     <!-- MODALS (Hidden by default) -->
     <!-- Modal 1: Python Automation (UPDATED) -->
-    <div id="modal-project-1"
-        class="modal opacity-0 pointer-events-none fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-4">
-        <div
-            class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl transform scale-95 transition-transform duration-300">
+    <div id="modal-project-1" class="modal opacity-0 pointer-events-none fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl transform scale-95 transition-transform duration-300">
             <div class="p-8">
                 <div class="flex justify-between items-center mb-6 border-b pb-4">
-                    <h3 class="text-2xl font-bold text-dark" data-i18n="p1_modal_title">Territory Planning Data Pipeline
-                    </h3>
-                    <button onclick="toggleModal('modal-project-1')" class="text-slate-400 hover:text-red-500"><i
-                            class="fa-solid fa-times text-2xl"></i></button>
+                    <h3 class="text-2xl font-bold text-dark" data-i18n="p1_modal_title">Territory Planning Data Pipeline</h3>
+                    <button onclick="toggleModal('modal-project-1')" class="text-slate-400 hover:text-red-500"><i class="fa-solid fa-times text-2xl"></i></button>
                 </div>
-
+                
                 <div class="space-y-6 text-slate-700">
                     <!-- Context -->
                     <div>
-                        <h4 class="font-bold text-blue-600 mb-2 text-sm uppercase tracking-wide"
-                            data-i18n="label_problem">Problem Statement (BizOps)</h4>
+                        <h4 class="font-bold text-blue-600 mb-2 text-sm uppercase tracking-wide" data-i18n="label_problem">Problem Statement (BizOps)</h4>
                         <p class="text-sm leading-relaxed bg-slate-50 p-4 rounded-lg" data-i18n="p1_modal_problem">
-                            Territory planning requires accurate financial data for 1,400+ accounts. The previous
-                            process was <strong>entirely manual</strong>, requiring staff to search, verify, and
-                            copy-paste data for each company. This <strong>671-hour manual workload</strong> (2 people
-                            for 2 weeks) created a massive bottleneck for strategic execution.
+                            Territory planning requires accurate financial data for 1,400+ accounts. The previous process was <strong>entirely manual</strong>, requiring staff to search, verify, and copy-paste data for each company. This <strong>671-hour manual workload</strong> (2 people for 2 weeks) created a massive bottleneck for strategic execution.
                         </p>
                     </div>
 
                     <!-- Action -->
                     <div>
-                        <h4 class="font-bold text-blue-600 mb-2 text-sm uppercase tracking-wide"
-                            data-i18n="label_solution">Product Solution & Execution</h4>
+                        <h4 class="font-bold text-blue-600 mb-2 text-sm uppercase tracking-wide" data-i18n="label_solution">Product Solution & Execution</h4>
                         <ul class="list-disc list-outside ml-5 text-sm space-y-2" data-i18n="p1_modal_action">
-                            <li><strong>Process Redesign:</strong> Identified that data collection was the primary
-                                bottleneck in territory planning. Designed an automated workflow to replace manual
-                                entry.</li>
-                            <li><strong>Technical Execution:</strong> Engineered a Python/Selenium crawler to fetch
-                                real-time financial data from public databases and integrate it with internal Salesforce
-                                records.</li>
-                            <li><strong>Data Strategy:</strong> Solved a critical "Entity Resolution" problem (brand
-                                name vs. legal name) by re-engineering the matching logic to use Business Registration
-                                Numbers as the unique key.</li>
+                            <li><strong>Process Redesign:</strong> Identified that data collection was the primary bottleneck in territory planning. Designed an automated workflow to replace manual entry.</li>
+                            <li><strong>Technical Execution:</strong> Engineered a Python/Selenium crawler to fetch real-time financial data from public databases and integrate it with internal Salesforce records.</li>
+                            <li><strong>Data Strategy:</strong> Solved a critical "Entity Resolution" problem (brand name vs. legal name) by re-engineering the matching logic to use Business Registration Numbers as the unique key.</li>
                         </ul>
                     </div>
 
                     <!-- Result -->
                     <div>
-                        <h4 class="font-bold text-blue-600 mb-2 text-sm uppercase tracking-wide"
-                            data-i18n="label_impact">Business Impact</h4>
+                        <h4 class="font-bold text-blue-600 mb-2 text-sm uppercase tracking-wide" data-i18n="label_impact">Business Impact</h4>
                         <div class="grid grid-cols-2 gap-4 mt-2">
                             <div class="bg-green-50 p-3 rounded border border-green-100 text-center">
-                                <span class="block text-2xl font-bold text-green-600"
-                                    data-i18n="p1_modal_res1_val">Easier</span>
-                                <span class="text-xs text-green-800" data-i18n="p1_modal_res1_desc">Information
-                                    Retrieval</span>
+                                <span class="block text-2xl font-bold text-green-600" data-i18n="p1_modal_res1_val">Easier</span>
+                                <span class="text-xs text-green-800" data-i18n="p1_modal_res1_desc">Information Retrieval</span>
                             </div>
                             <div class="bg-green-50 p-3 rounded border border-green-100 text-center">
-                                <span class="block text-2xl font-bold text-green-600"
-                                    data-i18n="p1_modal_res2_val">Faster</span>
-                                <span class="text-xs text-green-800" data-i18n="p1_modal_res2_desc">Account
-                                    Assignment</span>
+                                <span class="block text-2xl font-bold text-green-600" data-i18n="p1_modal_res2_val">Faster</span>
+                                <span class="text-xs text-green-800" data-i18n="p1_modal_res2_desc">Account Assignment</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Tech Stack -->
                     <div>
-                        <h4 class="font-bold text-slate-800 mb-2 text-xs uppercase" data-i18n="label_tech">Leveraged
-                            Tech</h4>
+                        <h4 class="font-bold text-slate-800 mb-2 text-xs uppercase" data-i18n="label_tech">Leveraged Tech</h4>
                         <div class="flex gap-2">
                             <span class="px-2 py-1 bg-slate-100 text-xs rounded font-mono">Python</span>
                             <span class="px-2 py-1 bg-slate-100 text-xs rounded font-mono">Process Automation</span>
@@ -710,51 +578,37 @@
     </div>
 
     <!-- Modal 2: CorpFinder -->
-    <div id="modal-project-2"
-        class="modal opacity-0 pointer-events-none fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-4">
-        <div
-            class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl transform scale-95 transition-transform duration-300">
+    <div id="modal-project-2" class="modal opacity-0 pointer-events-none fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl transform scale-95 transition-transform duration-300">
             <div class="p-8">
                 <div class="flex justify-between items-center mb-6 border-b pb-4">
-                    <h3 class="text-2xl font-bold text-dark" data-i18n="p2_modal_title">CorpFinder: Internal AI Product
-                    </h3>
-                    <button onclick="toggleModal('modal-project-2')" class="text-slate-400 hover:text-red-500"><i
-                            class="fa-solid fa-times text-2xl"></i></button>
+                    <h3 class="text-2xl font-bold text-dark" data-i18n="p2_modal_title">CorpFinder: Internal AI Product</h3>
+                    <button onclick="toggleModal('modal-project-2')" class="text-slate-400 hover:text-red-500"><i class="fa-solid fa-times text-2xl"></i></button>
                 </div>
-
+                
                 <div class="space-y-6 text-slate-700">
                     <!-- Context -->
                     <div>
-                        <h4 class="font-bold text-purple-600 mb-2 text-sm uppercase tracking-wide"
-                            data-i18n="label_problem">User Pain Point (Product)</h4>
+                        <h4 class="font-bold text-purple-600 mb-2 text-sm uppercase tracking-wide" data-i18n="label_problem">User Pain Point (Product)</h4>
                         <p class="text-sm leading-relaxed bg-slate-50 p-4 rounded-lg" data-i18n="p2_modal_problem">
-                            Data verification was inaccurate because each sales rep followed different naming
-                            conventions for Accounts (e.g., brand name vs. legal name), making standard search
-                            ineffective.
+                            Data verification was inaccurate because each sales rep followed different naming conventions for Accounts (e.g., brand name vs. legal name), making standard search ineffective.
                         </p>
                     </div>
                     <!-- Action -->
                     <div>
-                        <h4 class="font-bold text-purple-600 mb-2 text-sm uppercase tracking-wide"
-                            data-i18n="label_solution">Product Solution</h4>
+                        <h4 class="font-bold text-purple-600 mb-2 text-sm uppercase tracking-wide" data-i18n="label_solution">Product Solution</h4>
                         <ul class="list-disc list-outside ml-5 text-sm space-y-2" data-i18n="p2_modal_action">
-                            <li><strong>Product Vision:</strong> "A search tool that understands context, not just
-                                keywords."</li>
-                            <li><strong>Implementation:</strong> Integrated Gemini API (LLM) to handle semantic queries,
-                                enabling fuzzy matching and handling bilingual inputs (Korean/English).</li>
-                            <li><strong>UX Improvement:</strong> Deployed as a chat interface to lower the barrier to
-                                entry, bypassing complex Salesforce logins.</li>
+                            <li><strong>Product Vision:</strong> "A search tool that understands context, not just keywords."</li>
+                            <li><strong>Implementation:</strong> Integrated Gemini API (LLM) to handle semantic queries, enabling fuzzy matching and handling bilingual inputs (Korean/English).</li>
+                            <li><strong>UX Improvement:</strong> Deployed as a chat interface to lower the barrier to entry, bypassing complex Salesforce logins.</li>
                         </ul>
                     </div>
                     <!-- Result -->
                     <div>
-                        <h4 class="font-bold text-purple-600 mb-2 text-sm uppercase tracking-wide"
-                            data-i18n="label_impact">Business Impact</h4>
+                        <h4 class="font-bold text-purple-600 mb-2 text-sm uppercase tracking-wide" data-i18n="label_impact">Business Impact</h4>
                         <div class="bg-purple-50 p-4 rounded border border-purple-100">
                             <p class="text-sm text-purple-900" data-i18n="p2_modal_result">
-                                <strong>Outcome:</strong> Validated the value of AI in operations (Digital
-                                Transformation). Recognized for improving Partner Experience (PX) and reducing support
-                                ticket volume.
+                                <strong>Outcome:</strong> Awarded Peer Bonus (Innovation). Recognized for improving Partner Experience (PX) and reducing support ticket volume.
                             </p>
                         </div>
                     </div>
@@ -764,50 +618,38 @@
     </div>
 
     <!-- Modal 3: Signal Bot -->
-    <div id="modal-project-3"
-        class="modal opacity-0 pointer-events-none fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-4">
-        <div
-            class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl transform scale-95 transition-transform duration-300">
+    <div id="modal-project-3" class="modal opacity-0 pointer-events-none fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl transform scale-95 transition-transform duration-300">
             <div class="p-8">
                 <div class="flex justify-between items-center mb-6 border-b pb-4">
                     <h3 class="text-2xl font-bold text-dark" data-i18n="p3_modal_title">Sales Signal Alert System</h3>
-                    <button onclick="toggleModal('modal-project-3')" class="text-slate-400 hover:text-red-500"><i
-                            class="fa-solid fa-times text-2xl"></i></button>
+                    <button onclick="toggleModal('modal-project-3')" class="text-slate-400 hover:text-red-500"><i class="fa-solid fa-times text-2xl"></i></button>
                 </div>
-
+                
                 <div class="space-y-6 text-slate-700">
                     <!-- Context -->
                     <div>
-                        <h4 class="font-bold text-green-600 mb-2 text-sm uppercase tracking-wide"
-                            data-i18n="label_problem">Problem Statement</h4>
+                        <h4 class="font-bold text-green-600 mb-2 text-sm uppercase tracking-wide" data-i18n="label_problem">Problem Statement</h4>
                         <p class="text-sm leading-relaxed bg-slate-50 p-4 rounded-lg" data-i18n="p3_modal_problem">
-                            Sales teams were missing "Golden Time" opportunities because identifying relevant investment
-                            news for 1,500+ clients manually was impossible.
+                            Sales teams were missing "Golden Time" opportunities because identifying relevant investment news for 1,500+ clients manually was impossible. 
                             This information gap led to lost revenue potential.
                         </p>
                     </div>
                     <!-- Action -->
                     <div>
-                        <h4 class="font-bold text-green-600 mb-2 text-sm uppercase tracking-wide"
-                            data-i18n="label_solution">Solution</h4>
+                        <h4 class="font-bold text-green-600 mb-2 text-sm uppercase tracking-wide" data-i18n="label_solution">Solution</h4>
                         <ul class="list-disc list-outside ml-5 text-sm space-y-2" data-i18n="p3_modal_action">
-                            <li><strong>Product Design:</strong> Engineered a workflow that extracts investment data
-                                tables directly from source HTML.</li>
-                            <li><strong>Filtering Logic:</strong> Implemented filtering logic to match internal client
-                                lists and identify relevant investment events.</li>
-                            <li><strong>Automated Delivery:</strong> Automated real-time alerts via Zapier and Workspace
-                                Flows to deliver actionable leads to sales reps instantly.</li>
+                            <li><strong>Product Design:</strong> Engineered a workflow that extracts investment data tables directly from source HTML.</li>
+                            <li><strong>Filtering Logic:</strong> Implemented filtering logic to match internal client lists and identify relevant investment events.</li>
+                            <li><strong>Automated Delivery:</strong> Automated real-time alerts via Zapier and Workspace Flows to deliver actionable leads to sales reps instantly.</li>
                         </ul>
                     </div>
                     <!-- Result -->
                     <div>
-                        <h4 class="font-bold text-green-600 mb-2 text-sm uppercase tracking-wide"
-                            data-i18n="label_impact">Business Impact</h4>
+                        <h4 class="font-bold text-green-600 mb-2 text-sm uppercase tracking-wide" data-i18n="label_impact">Business Impact</h4>
                         <div class="bg-green-50 p-4 rounded border border-green-100">
                             <p class="text-sm text-green-900" data-i18n="p3_modal_result">
-                                <strong>Outcome:</strong> Directly contributed to the sales pipeline by delivering
-                                <strong>36+ high-value leads</strong> (investment events), enabling proactive sales
-                                engagement.
+                                <strong>Outcome:</strong> Directly contributed to the sales pipeline by delivering <strong>36+ high-value leads</strong> (investment events), enabling proactive sales engagement.
                             </p>
                         </div>
                     </div>
@@ -817,62 +659,45 @@
     </div>
 
     <!-- Modal 4: Product Growth -->
-    <div id="modal-project-4"
-        class="modal opacity-0 pointer-events-none fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-4">
-        <div
-            class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl transform scale-95 transition-transform duration-300">
+    <div id="modal-project-4" class="modal opacity-0 pointer-events-none fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl transform scale-95 transition-transform duration-300">
             <div class="p-8">
                 <div class="flex justify-between items-center mb-6 border-b pb-4">
-                    <h3 class="text-2xl font-bold text-dark" data-i18n="p4_modal_title">Product Growth & Monetization
-                    </h3>
-                    <button onclick="toggleModal('modal-project-4')" class="text-slate-400 hover:text-red-500"><i
-                            class="fa-solid fa-times text-2xl"></i></button>
+                    <h3 class="text-2xl font-bold text-dark" data-i18n="p4_modal_title">Product Growth & Monetization</h3>
+                    <button onclick="toggleModal('modal-project-4')" class="text-slate-400 hover:text-red-500"><i class="fa-solid fa-times text-2xl"></i></button>
                 </div>
-
+                
                 <div class="space-y-6 text-slate-700">
                     <!-- Context -->
                     <div>
-                        <h4 class="font-bold text-orange-600 mb-2 text-sm uppercase tracking-wide"
-                            data-i18n="label_problem">Problem Statement (Growth)</h4>
+                        <h4 class="font-bold text-orange-600 mb-2 text-sm uppercase tracking-wide" data-i18n="label_problem">Problem Statement (Growth)</h4>
                         <p class="text-sm leading-relaxed bg-slate-50 p-4 rounded-lg" data-i18n="p4_modal_problem">
-                            Despite user acquisition, revenue growth was stagnant.
-                            Analysis revealed high churn in the onboarding flow for specific browsers (Edge: 46%
-                            conversion) and a mismatch in pricing for the core 40-50s demographic.
+                            Despite user acquisition, revenue growth was stagnant. 
+                            Analysis revealed high churn in the onboarding flow for specific browsers (Edge: 46% conversion) and a mismatch in pricing for the core 40-50s demographic.
                         </p>
                     </div>
                     <!-- Action -->
                     <div>
-                        <h4 class="font-bold text-orange-600 mb-2 text-sm uppercase tracking-wide"
-                            data-i18n="label_solution">Strategic Action</h4>
+                        <h4 class="font-bold text-orange-600 mb-2 text-sm uppercase tracking-wide" data-i18n="label_solution">Strategic Action</h4>
                         <ul class="list-disc list-outside ml-5 text-sm space-y-2" data-i18n="p4_modal_action">
-                            <li><strong>Deep Data Analysis:</strong> Diagnosed the root cause of churn by correlating
-                                browser usage with drop-offs (identifying the Edge redirect issue). Uncovered the
-                                'Willingness to Pay' of the 40-50s demographic through cohort behavior analysis.</li>
-                            <li><strong>Pricing Strategy:</strong> Restructured pricing tiers to align with value
-                                perception of 'Power Users', validated through A/B testing.</li>
-                            <li><strong>UX Optimization:</strong> Implemented browser-specific redirects and redesigned
-                                the tutorial UI with larger visuals to reduce friction for the target demographic.</li>
+                            <li><strong>Deep Data Analysis:</strong> Diagnosed the root cause of churn by correlating browser usage with drop-offs (identifying the Edge redirect issue). Uncovered the 'Willingness to Pay' of the 40-50s demographic through cohort behavior analysis.</li>
+                            <li><strong>Pricing Strategy:</strong> Restructured pricing tiers to align with value perception of 'Power Users', validated through A/B testing.</li>
+                            <li><strong>UX Optimization:</strong> Implemented browser-specific redirects and redesigned the tutorial UI with larger visuals to reduce friction for the target demographic.</li>
                         </ul>
                     </div>
                     <!-- Result -->
                     <div>
-                        <h4 class="font-bold text-orange-600 mb-2 text-sm uppercase tracking-wide"
-                            data-i18n="label_impact">Business Impact</h4>
+                        <h4 class="font-bold text-orange-600 mb-2 text-sm uppercase tracking-wide" data-i18n="label_impact">Business Impact</h4>
                         <div class="bg-orange-50 p-4 rounded border border-orange-100">
                             <p class="text-sm text-orange-900" data-i18n="p4_modal_result">
-                                <strong>Outcome:</strong> Achieved a <strong>2x increase in Monthly Recurring Revenue
-                                    (MRR)</strong> by fixing the "leaky bucket" in onboarding and optimizing the
-                                monetization model.
+                                <strong>Outcome:</strong> Achieved a <strong>2x increase in Monthly Recurring Revenue (MRR)</strong> by fixing the "leaky bucket" in onboarding and optimizing the monetization model.
                             </p>
                         </div>
                     </div>
                     <!-- Link to Notion -->
                     <div class="mt-6 pt-6 border-t border-slate-200">
-                        <a href="https://gobeyondhorizon.notion.site/Growth-Manager-4f18c8c44c5248a3afbedf48fbb4ebeb?pvs=74"
-                            target="_blank"
-                            class="inline-flex items-center justify-center w-full px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition gap-2 font-medium">
-                            <i class="fa-solid fa-external-link-alt"></i> <span data-i18n="btn_read_notion">Read Full
-                                Case Study on Notion</span>
+                        <a href="https://gobeyondhorizon.notion.site/Growth-Manager-4f18c8c44c5248a3afbedf48fbb4ebeb?pvs=74" target="_blank" class="inline-flex items-center justify-center w-full px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition gap-2 font-medium">
+                            <i class="fa-solid fa-external-link-alt"></i> <span data-i18n="btn_read_notion">Read Full Case Study on Notion</span>
                         </a>
                         <p class="text-center text-xs text-slate-400 mt-2">Opens detailed documentation in a new tab</p>
                     </div>
@@ -915,12 +740,12 @@
                 p1_title: "Territory Planning Data Pipeline",
                 p1_summary: "Automated the data collection of financial/industry info for 1,400+ clients, enabling data-driven territory assignment.",
                 p1_stat1: "Efficiency: <strong>671h → 8h</strong>",
-                p1_stat2: "100% Data Integrity Strategy",
+                p1_stat2: "Awarded Peer Bonus (Efficiency)",
                 p2_tag: "Internal Product",
                 p2_title: "CorpFinder: AI Agent",
                 p2_summary: "Launched an internal Gen AI product to resolve Salesforce search limitations, enhancing partner support experience.",
                 p2_stat1: "Improved UX for Sales/Partners",
-                p2_stat2: "Awarded Peer Bonus",
+                p2_stat2: "Awarded Peer Bonus (Innovation)",
                 p3_tag: "Sales Enablement",
                 p3_title: "Sales Signal Product",
                 p3_summary: "Developed a \"Sales Trigger\" system that filters investment news to deliver high-quality leads to the sales team.",
@@ -932,11 +757,12 @@
                 p4_stat1: "<strong>2x Increase</strong> in Monthly Revenue",
                 p4_stat2: "<strong>+40%p</strong> Conversion Rate (Edge)",
                 btn_view_case: "View Case Study",
-
+                
                 // NEW: Mini Projects (UPDATED)
                 other_proj_title: "Additional Technical Initiatives",
                 mini_p1_title: "AI-Powered Market Intelligence Agent",
                 mini_p1_desc: "Built an intelligent pipeline using <strong>Gemini API</strong> and <strong>External News Data</strong>. It clusters duplicate stories and generates concise summaries, allowing stakeholders to make faster decisions without reading every headline.",
+                mini_p1_proof: "Awarded Peer Bonus (Proactive Contribution)",
                 mini_p2_title: "Resistance Avalon Platform",
                 mini_p2_desc: "Designed and developed a web-based game platform with 800+ MAU. Automated complex game logic to remove administrative friction for users.",
 
@@ -948,7 +774,7 @@
                 job3_title: "Growth Manager",
                 job3_desc: "Executed product growth experiments. Redesigned pricing strategy and optimized onboarding funnels (Edge/Chrome), achieving 2x revenue growth.",
                 footer_title: "Open to BizOps & Technical PM Roles.",
-
+                
                 // Modals
                 label_problem: "Problem Statement",
                 label_solution: "Product Solution & Execution",
@@ -1009,12 +835,12 @@
                 p1_title: "영업 구역(Territory) 데이터 파이프라인",
                 p1_summary: "1,400개 이상의 고객사 재무/업종 데이터를 자동으로 수집하여, 영업 배정 전략 수립의 기반을 마련했습니다.",
                 p1_stat1: "효율성: <strong>671시간 → 8시간</strong>",
-                p1_stat2: "100% 데이터 정합성 전략",
+                p1_stat2: "Peer Bonus (Efficiency) 수상",
                 p2_tag: "Internal Product",
                 p2_title: "CorpFinder: 사내 AI 에이전트",
                 p2_summary: "Salesforce의 검색 한계를 해결하는 생성형 AI 제품을 런칭하여 파트너 지원 경험을 개선했습니다.",
                 p2_stat1: "영업/파트너 UX 개선",
-                p2_stat2: "Peer Bonus 수상",
+                p2_stat2: "Peer Bonus (Innovation) 수상",
                 p3_tag: "Sales Enablement",
                 p3_title: "세일즈 시그널 알림 봇",
                 p3_summary: "투자 뉴스를 필터링하여 영업팀에 고품질 리드를 제공하는 '세일즈 트리거' 시스템을 개발했습니다.",
@@ -1026,11 +852,12 @@
                 p4_stat1: "월 매출(MRR) <strong>2배 성장</strong>",
                 p4_stat2: "전환율 <strong>+40%p</strong> (Edge)",
                 btn_view_case: "상세 내용 보기",
-
+                
                 // NEW: Mini Projects (UPDATED)
                 other_proj_title: "추가 기술 이니셔티브 (Technical Initiatives)",
                 mini_p1_title: "AI 기반 마켓 인텔리전스 에이전트",
                 mini_p1_desc: "<strong>Gemini API</strong>와 <strong>외부 뉴스 데이터</strong>를 연동해 지능형 파이프라인을 구축했습니다. 중복 기사를 클러스터링(묶음)하고 핵심 내용만 요약하여, 이해관계자들이 헤드라인을 일일이 클릭하지 않고도 빠른 의사결정을 내릴 수 있도록 지원했습니다.",
+                mini_p1_proof: "Peer Bonus (Proactive Contribution) 수상",
                 mini_p2_title: "Resistance Avalon 게임 플랫폼",
                 mini_p2_desc: "800명 이상의 MAU를 보유한 웹 게임 플랫폼을 직접 기획/개발했습니다. 복잡한 게임 로직을 자동화하여 운영 효율을 높였습니다.",
 
@@ -1061,7 +888,7 @@
                 p2_modal_title: "CorpFinder: 사내 AI 에이전트",
                 p2_modal_problem: "영업 담당자마다 Account 이름을 입력하는 방식이 달라(예: 브랜드명 vs 법인명), 데이터 확인의 정확도가 떨어졌습니다. 이로 인해 표준 검색 기능만으로는 고객사 여부를 확인하기 어려웠습니다.",
                 p2_modal_action: "<li><strong>제품 비전:</strong> \"단순 키워드가 아닌 맥락을 이해하는 검색 도구\"</li><li><strong>구현:</strong> Gemini API(LLM)를 연동하여 의미론적(Semantic) 질의를 처리하고, 오타 및 한영 혼용 입력을 유연하게 처리하도록 구현했습니다.</li><li><strong>UX 개선:</strong> 복잡한 Salesforce 로그인 없이 접근 가능한 채팅 인터페이스로 배포하여 진입 장벽을 낮췄습니다.</li>",
-                p2_modal_result: "<strong>성과:</strong> Peer Bonus (사내 혁신상) 수상. 파트너 경험(PX) 개선 및 지원 티켓 감소 성과를 인정받았습니다.",
+                p2_modal_result: "<strong>성과:</strong> Awarded Peer Bonus (Innovation). 파트너 경험(PX) 개선 및 지원 티켓 감소 성과를 인정받았습니다.",
 
                 p3_modal_title: "세일즈 시그널 알림 시스템",
                 p3_modal_problem: "1,500개 이상의 고객사 관련 투자 뉴스를 수동으로 모니터링하는 것은 불가능했고, 이로 인해 영업팀은 중요한 \"골든 타임\" 영업 기회를 놓치고 있었습니다.",
@@ -1079,7 +906,7 @@
 
         function setLanguage(lang) {
             currentLang = lang;
-
+            
             // Toggle Button Styles
             if (lang === 'en') {
                 document.getElementById('btn-en').classList.add('lang-active', 'text-black');
@@ -1102,12 +929,12 @@
                 }
             });
         }
-
+        
         // Modal Logic (Unchanged)
         function toggleModal(modalID) {
             const modal = document.getElementById(modalID);
             const body = document.querySelector('body');
-
+            
             if (modal.classList.contains('opacity-0')) {
                 modal.classList.remove('opacity-0', 'pointer-events-none');
                 modal.querySelector('div').classList.remove('scale-95');
@@ -1123,7 +950,7 @@
 
         const modals = document.querySelectorAll('.modal');
         modals.forEach(modal => {
-            modal.addEventListener('click', function (event) {
+            modal.addEventListener('click', function(event) {
                 const isClickInside = modal.querySelector('div').contains(event.target);
                 if (!isClickInside) {
                     toggleModal(modal.id);
@@ -1132,5 +959,4 @@
         });
     </script>
 </body>
-
 </html>
